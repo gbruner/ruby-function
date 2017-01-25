@@ -17,6 +17,22 @@ class Test_Addition < Minitest::Test
     def test_neg4_plus10_returns6
 		assert_equal(6,add(-4,10))
 	end
-	
+
+#add floats
+	def test_add_floats	
+		assert_equal(7.77,add(3.33,4.44))
+	end	
+
+#add strings
+    def test_add_strings
+		assert_equal("Sunday",add("Sun","day"))
+	end
+
+#add dates
+    def test_add_dates
+		assert_equal(01/25/17,add(01/22/17,3))
+	end
+
+
 end
 
