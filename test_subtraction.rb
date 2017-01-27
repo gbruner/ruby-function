@@ -18,6 +18,11 @@ class Test_Subtraction < Minitest::Test
 		assert_equal(-14,minus(-4,10))
 	end
 
+#more than 1 variable to pass
+    def test_more_than_one_variable
+        assert_equal(20,minus(80,40,20))	
+    end    	
+
 #add floats
 	def test_sub_floats	
 		assert_equal(3.33,minus(7.77,4.44))
